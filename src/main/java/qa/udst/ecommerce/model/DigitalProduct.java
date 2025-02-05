@@ -5,7 +5,7 @@ public class DigitalProduct extends AbstractProduct {
 
     public DigitalProduct(int id, String name, double price, String downloadLink) {
         super(id, name, price);
-        downloadLink = this.downloadLink;
+        this.downloadLink = downloadLink ;
     }
 
     @Override

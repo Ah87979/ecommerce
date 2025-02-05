@@ -13,6 +13,9 @@ public class PhysicalProduct extends AbstractProduct implements Shippable {
     }
 
     public void setWeight(double weight) {
+        if (weight <= 0) {
+            throw new IllegalArgumentException("Weight must be positive");
+        }
         this.weight = weight;
     }
 
